@@ -1,5 +1,5 @@
 (function(){
-  function config($stateProvider, $locationProvider){
+  function config($stateProvider, $locationProvider, $firebaseObject){
     $locationProvider
       .html5Mode({
         enabled: true,
@@ -7,9 +7,14 @@
       });
 
       $stateProvider
+      .state('room-view', {
+        url: '/room-view',
+        controller: 'RoomViewCtrl as roomViewCtrl',
+        templateUrl: '/templates/room_view.html'
+      });
   }
 
   angular
-    .module('blocChat',['ui.router'])
+    .module('blocChat',['ui.router', 'firebase'])
     .config(config);
 })();

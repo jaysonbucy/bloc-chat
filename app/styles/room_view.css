@@ -1,0 +1,8 @@
+.room-view{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(206, 215, 229);
+  z-index: 0;
+}
