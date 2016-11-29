@@ -25,7 +25,7 @@ a {
     cursor: pointer;
 }
 
-section.left{
+nav.left{
   position: absolute;
   left: inherit;;
   top: inherit;;

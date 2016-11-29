@@ -8,6 +8,7 @@
 
       $stateProvider
       .state('room-view', {
+        abstract: true,
         url: '/room-view',
         controller: 'RoomViewCtrl as roomViewCtrl',
         templateUrl: '/templates/room_view.html'
