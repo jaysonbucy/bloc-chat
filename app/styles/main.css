@@ -25,12 +25,20 @@ a {
     cursor: pointer;
 }
 
-nav.left{
+nav.left {
   position: absolute;
-  left: inherit;;
-  top: inherit;;
+  left: inherit;
+  top: inherit;
   bottom: inherit;
-  width: 200px;
+  width: 20%;
   height: 100%;
   float: left;
+}
+
+section.chat {
+  left:inherit;
+  top: inherit;
+  width: 80%;
+  height: 100%;
+  float: right;
 }
