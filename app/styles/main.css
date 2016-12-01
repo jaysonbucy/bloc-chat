@@ -25,7 +25,7 @@ a {
     cursor: pointer;
 }
 
-nav.left {
+div.left {
   position: absolute;
   left: inherit;
   top: inherit;
@@ -35,7 +35,7 @@ nav.left {
   float: left;
 }
 
-section.chat {
+div.chat {
   left:inherit;
   top: inherit;
   width: 80%;
