@@ -1,7 +1,7 @@
-<h1 class="main-title"><img src={{main.mainTitle}}></img></h1>
-<div>
-  <ng-include src="'/templates/side_bar.html'"></ng-include>
-</div>
-<div>
-  <ng-include src="'/templates/chat_window.html'"></ng-include>
-</div>
+<section ng-controller="MainCtrl">
+  <h1 class="main-title"><img src={{main.mainTitle}}></img></h1>
+
+  <div ng-repeat="room in rooms">
+    <strong>{{ room.name }}</strong>
+  </div>
+</section>
