@@ -7,9 +7,15 @@
       });
 
       $stateProvider
+        .state('main', {
+          url: '/',
+          controller: 'MainCtrl as main',
+          templateUrl: '/templates/main.html'
+        });
+
   }
 
   angular
-    .module('blocChat',['ui.router'])
+    .module('blocChat', ['ui.router', 'firebase'])
     .config(config);
 })();

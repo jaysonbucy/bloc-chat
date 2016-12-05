@@ -1,0 +1,44 @@
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    background-image: url(../assets/images/backgrounds/blue_blur.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    min-height: 100%;
+}
+
+a {
+    cursor: pointer;
+}
+
+div.left {
+  position: absolute;
+  left: inherit;
+  top: inherit;
+  bottom: inherit;
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+div.chat {
+  left:inherit;
+  top: inherit;
+  width: 80%;
+  height: 100%;
+  float: right;
+}
