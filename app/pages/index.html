@@ -10,9 +10,28 @@
 <body>
   <ui-view></ui-view>
 
+  <div ng-controller="AddRoomCtrl as add_room">
+    <script type="text/ng-template">
+      <div class="modal-header">
+        <h3>Create Room</h3>
+      </div>
+      <div class="modal-body">
+        <label id="text-area">Enter a room name:
+          <input type="text" id="name"></input>
+        </label>
+        <label id="clickables">
+          <button ng-click="add.cancel">Cancel</button>
+          <button ng-click="add.addRoom">Create Room</button>
+        </label>
+      </div>
+    </script>
+    <button ng-click="add_room.open()">New Room</button>
+  </div>
+
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.4/ui-bootstrap-tpls.min.js"></script>
 
   <!--firebase code-->
   <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
@@ -23,5 +42,6 @@
   <script src="/scripts/app.js"></script>
   <script src="/scripts/services/Room.js"></script>
   <script src="/scripts/controllers/MainCtrl.js"></script>
+  <script src="/scripts/controllers/AddRoomCtrl.js"></script>
 </body>
 </html>
