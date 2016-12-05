@@ -1,7 +1,7 @@
 (function(){
   function AddRoomCtrl($uibModal){
     this.name = '';
-    AddRoomCtrl.open = function(){
+    this.open = function(){
       var modalOpen = $uibModal.open({
         templateUrl: 'new_room.html',
         controller: function($scope, $uibModalInstance){
@@ -21,5 +21,5 @@
   }
   angular
     .module('blocChat')
-    .factory('$uibModal', 'AddRoomCtrl', [AddRoomCtrl]);
+    .factory('AddRoomCtrl', ['$uibModal', AddRoomCtrl]);
 })();
