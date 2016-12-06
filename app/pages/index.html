@@ -27,5 +27,9 @@
   <script src="/scripts/controllers/AddRoomCtrl.js"></script>
   <script src="/scripts/controllers/MainCtrl.js"></script>
 
+  <section ng-controller="AddRoomCtrl as add">
+    <button ng-click="add.openModal()" class="btn">New Room</button>
+  </section>
+
 </body>
 </html>
