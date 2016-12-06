@@ -34,7 +34,5 @@ input{
 }
 
 .new_room{
-  align-items: center;
-  font-family: 'Rubik', sans-serif;
   background-image: url(../assets/images/backgrounds/blue_blur.jpeg);
 }
