@@ -5,6 +5,7 @@
   <title>Bloc Chat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
@@ -23,27 +24,8 @@
 
   <script src="/scripts/app.js"></script>
   <script src="/scripts/services/Room.js"></script>
-  <script src="/scripts/controllers/MainCtrl.js"></script>
   <script src="/scripts/controllers/AddRoomCtrl.js"></script>
-
-  <div ng-controller="AddRoomCtrl as add_room">
-    <script type="text/ng-template" id="new_room.html">
-      <form ng-submit="submit()">
-        <div class="modal-header">
-          <h3>Create Room</h3>
-        </div>
-        <div class="modal-body">
-          <label id="text-area">Enter a room name:</label>
-            <input type="text" ng-modal="name"></input>
-        </div>
-        <div class="modal-footer">
-            <button ng-click="add_room.cancel()">Cancel</button>
-            <button ng-click="add_room.submit()">Create Room</button>
-        </div>
-    </form>
-    </script>
-    <button ng-click="add_room.open()">New Room</button>
-  </div>
+  <script src="/scripts/controllers/MainCtrl.js"></script>
 
 </body>
 </html>
