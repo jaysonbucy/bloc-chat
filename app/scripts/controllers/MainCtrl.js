@@ -16,10 +16,10 @@
           };
         }
       });
-        modal.result.then(function (name){
-          firebase.database().ref().child("rooms").push({"name": name});
-        });
-      };
+      modal.result.then(function (name){
+        firebase.database().ref().child("rooms").push({"name": name});
+      });
+    };
   }
 
   angular
