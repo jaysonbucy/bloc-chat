@@ -29,12 +29,12 @@ button{
   background-color: rgb(88, 100, 199);
 }
 
+input{
+  color: black;
+}
+
 .new_room{
   align-items: center;
   font-family: 'Rubik', sans-serif;
   background-image: url(../assets/images/backgrounds/blue_blur.jpeg);
-}
-
-#text-box{
-  color: black;
 }

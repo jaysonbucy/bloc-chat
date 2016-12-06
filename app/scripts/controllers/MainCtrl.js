@@ -17,7 +17,6 @@
         }
       });
         modal.result.then(function (name){
-          debugger;
           firebase.database().ref().child("rooms").push({"name": name});
         });
       };
