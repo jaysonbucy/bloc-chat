@@ -7,12 +7,20 @@
     this.openModal = function(){
       var modal = $uibModal.open({
         templateUrl: '/templates/new_room.html',
-        controller: 'AddRoomCtrl as addRoom'
+        controller: function($scope, $uibModalInstance){
+          $scope.cancel = function(){
+            $uibModalInstance.dismiss('cancel');
+          };
+          $scope.submit = function(){
+            $uibModalInstance.close($scope.name);
+          };
+        }
       });
-      modal.result.then(function (name) {
-        firebase.database().ref().child("rooms").push({"name":name});
-      });
-    };
+        modal.result.then(function (name){
+          debugger;
+          firebase.database().ref().child("rooms").push({"name": name});
+        });
+      };
   }
 
   angular

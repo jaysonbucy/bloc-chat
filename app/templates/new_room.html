@@ -1,5 +1,5 @@
 <div class="new_room">
-  <form ng-submit="add_room.submit()">
+  <form ng-submit="submit()">
     <div class="modal-header">
       <h3>Create Room</h3>
     </div>
@@ -9,8 +9,8 @@
       <input type="text" ng-modal="name" id="text-box"></input>
     </div>
     <div class="modal-footer">
-      <button ng-click="add_room.cancel()">Cancel</button>
-      <button ng-click="add_room.submit()">Create Room</button>
+      <button ng-click="cancel()" class="btn">Cancel</button>
+      <button ng-click="submit()" class="btn">Create Room</button>
     </div>
   </form>
 </div>
