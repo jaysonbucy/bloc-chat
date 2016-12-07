@@ -19,6 +19,7 @@ body {
     font-family: 'Rubik', sans-serif;
     color: white;
     min-height: 100%;
+    padding-left: 10%;
 }
 
 a {
@@ -31,6 +32,10 @@ button{
 
 input{
   color: black;
+}
+
+ui-view{
+  position: relative;
 }
 
 .new_room{

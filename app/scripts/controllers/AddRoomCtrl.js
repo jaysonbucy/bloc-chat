@@ -2,7 +2,7 @@
   function AddRoomCtrl($uibModal){
     this.openModal = function(){
       var modal = $uibModal.open({
-        templateUrl: '/templates/new_room.html',
+        templateUrl: '/templates/create_room.html',
         controller: function($scope, $uibModalInstance){
           $scope.cancel = function(){
             $uibModalInstance.dismiss('cancel');
