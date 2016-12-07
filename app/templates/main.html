@@ -1,7 +1,9 @@
-<section ng-controller="MainCtrl">
-  <h1 class="main-title"><img src={{main.mainTitle}}></img></h1>
-
+<section ng-controller="MainCtrl as main">
+  <h1 class="main-title">
+    <img src={{main.mainTitle}}></img>
+  </h1>
   <div ng-repeat="room in rooms">
     <strong>{{ room.name }}</strong>
   </div>
+  <br>
 </section>

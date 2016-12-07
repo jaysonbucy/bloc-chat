@@ -25,20 +25,14 @@ a {
     cursor: pointer;
 }
 
-div.left {
-  position: absolute;
-  left: inherit;
-  top: inherit;
-  bottom: inherit;
-  width: 20%;
-  height: 100%;
-  float: left;
+button{
+  background-color: rgb(88, 100, 199);
 }
 
-div.chat {
-  left:inherit;
-  top: inherit;
-  width: 80%;
-  height: 100%;
-  float: right;
+input{
+  color: black;
+}
+
+.new_room{
+  background-image: url(../assets/images/backgrounds/blue_blur.jpeg);
 }

@@ -9,4 +9,3 @@
     .module('blocChat')
     .controller('MainCtrl', ['Room', '$scope', MainCtrl]);
 })();
-;
