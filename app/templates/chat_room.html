@@ -1,5 +1,5 @@
-<section class="chat-room">
-  <h2 class="room-title">Test Title</h2>
+<section class="chat-room" ng-controller="ViewMessageCtrl as view">
+  <h2 ng-model="room_title">{{ view.message.roomName }}</h2>
   <div class="message">
     <p class="user-name">Test User</p>
     <p class="message-content">Test Message</p>

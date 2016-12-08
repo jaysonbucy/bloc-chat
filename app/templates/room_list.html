@@ -1,5 +1,5 @@
 <section class="room-list" ng-controller="MainCtrl">
   <div ng-repeat="room in rooms">
-    <strong>{{ room.name }}</strong>
+    <a ng-model="room_name">{{ room.name }}</a>
   </div>
 </section>

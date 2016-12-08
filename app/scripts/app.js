@@ -11,11 +11,11 @@
           url: '/',
           controller: 'MainCtrl as main',
           templateUrl: '/templates/main.html'
-        // })
-        // .state('room', {
-        //   url: '/room',
-        //   controller: 'ViewMessageCtrl as viewMessage',
-        //   templateUrl: '/templates/chat_room.html'
+        })
+        .state('room', {
+          url: '/room',
+          controller: 'ViewMessageCtrl as viewMessage',
+          templateUrl: '/templates/chat_room.html'
         });
 
   }
