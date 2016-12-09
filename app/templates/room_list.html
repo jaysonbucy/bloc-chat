@@ -1,0 +1,5 @@
+<section class="room_list" ng-controller="MainCtrl as main">
+  <div ng-repeat="room in rooms">
+    <a ui-sref="room" ng-click="main.setCurrentRoom(room)">{{room.name}}</a>
+  </div>
+</section>

@@ -11,6 +11,11 @@
           url: '/',
           controller: 'MainCtrl as main',
           templateUrl: '/templates/main.html'
+        })
+        .state('room', {
+          url: '/room',
+          controller: 'MainCtrl as main',
+          templateUrl: '/templates/chat_room.html'
         });
 
   }

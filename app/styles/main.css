@@ -19,9 +19,11 @@ body {
     font-family: 'Rubik', sans-serif;
     color: white;
     min-height: 100%;
+    padding-left: 10%;
 }
 
 a {
+    color: white;
     cursor: pointer;
 }
 
@@ -33,6 +35,32 @@ input{
   color: black;
 }
 
+ui-view{
+  position: relative;
+}
+
+select{
+  background-color: rgb(88, 100, 199);
+  color: color;
+}
+
+tr:nth-child(even){
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main_title{
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.room_title{
+  text-decoration: underline;
+}
+
 .new_room{
   background-image: url(../assets/images/backgrounds/blue_blur.jpeg);
+}
+
+.message_content{
+  margin-bottom: 10px;
 }

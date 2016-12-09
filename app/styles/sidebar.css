@@ -1,0 +1,9 @@
+.side_bar{
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     right: 90%;
+     height: 100%;
+     background-color: rgba(255, 255, 255, 0.3);
+     z-index: 100;
+ }
