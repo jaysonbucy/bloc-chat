@@ -28,13 +28,12 @@
   <script src="/scripts/services/Message.js"></script>
   <script src="/scripts/controllers/AddRoomCtrl.js"></script>
   <script src="/scripts/controllers/MainCtrl.js"></script>
-  <script src="/scripts/controllers/ViewMessageCtrl.js"></script>
 
-  <section class="side-bar">
+  <section class="side_bar">
     <section ng-controller="MainCtrl as main">
-      <h1 class="main-title">
+      <a ui-sref="main" class="main_title">
       <img src={{main.mainTitle}}></img>
-    </h1>
+    </a>
     </section>
     <br>
     <ng-include src="'/templates/room_list.html'"></ng-include>

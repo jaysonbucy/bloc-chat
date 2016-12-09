@@ -39,6 +39,20 @@ ui-view{
   position: relative;
 }
 
+select{
+  background-color: rgb(88, 100, 199);
+  color: color;
+}
+
+.main_title{
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.room_title{
+  text-decoration: underline;
+}
+
 .new_room{
   background-image: url(../assets/images/backgrounds/blue_blur.jpeg);
 }

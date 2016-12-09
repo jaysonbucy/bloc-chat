@@ -14,7 +14,7 @@
         })
         .state('room', {
           url: '/room',
-          controller: 'ViewMessageCtrl as viewMessage',
+          controller: 'MainCtrl as main',
           templateUrl: '/templates/chat_room.html'
         });
 
