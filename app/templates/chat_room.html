@@ -1,7 +1,9 @@
 <section class="chat_room" ng-controller="MainCtrl as main">
   <h2 class="room_title">{{currentRoom}}</h2>
-  <div class="message" ng-repeat="message in messages">
-    <h4 class="user_name">{{message.username}}</h4>
-    <p class="message_content">{{message.content}}</p>
-  </div>
+  <br>
+  <table class="message" ng-repeat="message in messages">
+    <tr>
+      <td class="message_content">{{message.username}}: <br>{{message.content}}</td>
+    </tr>
+  </table>
 </section>
