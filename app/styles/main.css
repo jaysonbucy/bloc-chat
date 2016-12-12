@@ -61,6 +61,14 @@ tr:nth-child(even){
   background-image: url(../assets/images/backgrounds/blue_blur.jpeg);
 }
 
+.new_user{
+  background-image: url(../assets/images/backgrounds/blue_blur.jpeg)
+}
+
 .message_content{
   margin-bottom: 10px;
+}
+
+.error{
+  color: red;
 }
