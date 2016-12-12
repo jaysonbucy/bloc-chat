@@ -1,9 +1,7 @@
 (function() {
   function UserName($cookies, $uibModal, $rootScope) {
-    console.log("here");
     var currentUser = $cookies.get('blocChatCurrentUser');
     if (!currentUser || currentUser === '') {
-      //this.openModal = function(){
         var modal = $uibModal.open({
           backdrop: 'static',
           keyboard: false,
@@ -22,7 +20,6 @@
         modal.result.then(function (user){
           $cookies.put('blocChatCurrentUser', user);
         });
-      //};
     }
   }
 
