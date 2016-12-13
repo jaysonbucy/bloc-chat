@@ -6,11 +6,10 @@
         return $firebaseArray(messages.equalTo(roomId));
       },
       send: function(roomId, message){
-        debugger;
         var messages = $firebaseArray(firebase.database().ref().child("messages"));
         var currentUser = $cookies.get('blocChatCurrentUser');
         var time = new Date();
-        this.time = time.getHours() + ':' + time.getMinutes();
+        time = time.getHours() + ':' + time.getMinutes();
         var newMessage = {
           content: message,
           roomId: roomId,
