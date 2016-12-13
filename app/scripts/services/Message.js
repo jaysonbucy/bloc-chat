@@ -4,11 +4,13 @@
       getMessagesByRoomId: function(roomId){
         var messages = firebase.database().ref().child("messages").orderByChild("roomId");
         return $firebaseArray(messages.equalTo(roomId));
-      }
+      },
       send: function(roomId, message){
+        debugger;
+        var messages = $firebaseArray(firebase.database().ref().child("messages"));
         var currentUser = $cookies.get('blocChatCurrentUser');
         var time = new Date();
-        time = time.getHours() + ':' + time.getMinutes();
+        this.time = time.getHours() + ':' + time.getMinutes();
         var newMessage = {
           content: message,
           roomId: roomId,

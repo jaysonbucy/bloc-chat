@@ -5,7 +5,7 @@
     this.roomArray = Room;
     $scope.rooms = this.roomArray.all;
 
-    this.messageArray = Message;
+    this.messageService = Message;
 
     this.setCurrentRoom = function(room){
       $rootScope.currentRoom = room.name;
