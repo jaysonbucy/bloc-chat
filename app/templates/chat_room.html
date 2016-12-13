@@ -1,9 +1,15 @@
 <section class="chat_room" ng-controller="MainCtrl as main">
-  <h2 class="room_title">{{currentRoom}}</h2>
-  <br>
-  <table class="message" ng-repeat="message in messages">
-    <tr>
-      <td class="message_content">{{message.username}}: <br>{{message.content}}</td>
-    </tr>
-  </table>
+  <div>
+    <h2 class="room_title">{{currentRoom}}</h2>
+    <br>
+    <table class="message" ng-repeat="message in messages">
+      <tr>
+        <td class="message_content">{{message.username}}: <br>{{message.content}}</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <input type="text" class="message_input" ng-model="new_message"></input>
+    <button class="btn" ng-click="main.messageService.send(currentRoomId, new_message)">Send</button>
+  </div>
 </section>
